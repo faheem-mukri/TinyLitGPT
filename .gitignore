@@ -1,0 +1,9 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+data/
+tokenizer/data.txt
+
+model.pth
