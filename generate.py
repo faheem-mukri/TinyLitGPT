@@ -9,7 +9,7 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 d_model = 512
 n_heads = 8
 n_layers = 8
-block_size = 64
+block_size = 128
 
 #load tokenizer
 sp = spm.SentencePieceProcessor(model_file="tokenizer/tiny.model")
@@ -86,8 +86,8 @@ print(
         sp,
         "Once upon a time",
         max_tokens=100,
-        temperature=0.7,
-        top_k=50,
+        temperature=0.65,
+        top_k=40,
         top_p=0.9,
         device=device
     )

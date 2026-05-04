@@ -11,7 +11,7 @@ import sentencepiece as spm
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 batch_size = 4
-block_size = 64
+block_size = 128
 
 # 🔥 LOAD TOKENIZER
 sp = spm.SentencePieceProcessor(model_file="tokenizer/tiny.model")

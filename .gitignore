@@ -1,9 +1,17 @@
-.venv/
-venv/
-__pycache__/
+**pycache**/
 *.pyc
+
+venv/
+.venv/
+
+*.pth
+*.pt
 
 data/
 tokenizer/data.txt
 
-model.pth
+.vscode/
+.idea/
+
+.DS_Store
+Thumbs.db
