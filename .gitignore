@@ -1,18 +1,38 @@
+# Python Cache
 **pycache**/
 *.pyc
 
+#virtual environments
 venv/
 .venv/
 
+# model checkpoints
 *.pth
 *.pt
 
+#generated datasets
 data/*
 !data/*.py
+
+# tokenizer data
 tokenizer/data.txt
 
+#experiments
+experiments/
+
+#IDE files
 .vscode/
 .idea/
 
+## OS files
 .DS_Store
 Thumbs.db
+
+# huggingface cache
+.cache/
+
+#jupyter
+.ipynb_checkpoints/
+
+#logs
+*.log
